@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copy Trader | Learn your trade, become you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Copy<span>Trader</span></div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#ai-lab">AI Lab</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="btn btn-secondary" data-open-modal="auth-modal">Sign in</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Web3 native trader co-pilot</p>
+          <h1>Learn your trade, become you.</h1>
+          <p class="lead">
+            Copy Trader brings your on-chain history to life. Connect your Hyperliquid account,
+            let our AI apprentice learn from every move, and deploy a 24/7 trading partner that
+            mirrors your edge without the screen time.
+          </p>
+          <div class="cta-row">
+            <button class="btn btn-primary" data-open-modal="auth-modal">Create account</button>
+            <button class="btn btn-ghost" data-open-modal="demo-modal">See simulated trade</button>
+          </div>
+          <div class="trusted">
+            <span class="trusted__label">Trusted by</span>
+            <div class="trusted__logos">
+              <span>DeFi Natives</span>
+              <span>Quant Guild</span>
+              <span>Crypto DAOs</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel">
+            <h2>Hyperliquid Replay</h2>
+            <p class="panel__hint">Connect and backfill in seconds.</p>
+            <form class="panel__form" id="hyperliquid-form">
+              <label>
+                Hyperliquid API Key
+                <input type="text" name="apiKey" placeholder="Enter your API key" required />
+              </label>
+              <label>
+                API Secret
+                <input type="password" name="apiSecret" placeholder="Enter your secret" required />
+              </label>
+              <button class="btn btn-primary" type="submit">Sync my history</button>
+            </form>
+            <p class="panel__note">
+              We call Hyperliquid&apos;s authenticated endpoints to pull fills, positions, and funding data.
+              Credentials are encrypted and never leave your wallet enclave.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section__title">Why Copy Trader?</h2>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature__icon">⚡️</div>
+            <h3>Instant Hyperliquid ingestion</h3>
+            <p>Stream historical trades, balances, and funding rates straight from Hyperliquid&apos;s API with one click.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🧠</div>
+            <h3>Personal AI market brain</h3>
+            <p>Foundation models tuned on your fills learn entries, exits, and risk so your trading fingerprint stays yours.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🤖</div>
+            <h3>Autonomous execution</h3>
+            <p>Deploy the trained agent to trade 24/7 through authenticated Hyperliquid routes with built-in guardrails.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🔐</div>
+            <h3>Wallet-first security</h3>
+            <p>We never custody funds. Sign sessions with your wallet, encrypt secrets, and revoke access anytime.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="workflow">
+      <div class="container">
+        <h2 class="section__title">Workflow built for traders</h2>
+        <div class="timeline">
+          <div class="timeline__step">
+            <div class="step__number">01</div>
+            <div>
+              <h3>Connect &amp; verify</h3>
+              <p>Authenticate with Hyperliquid and import your trading ledger using read-only API credentials.</p>
+            </div>
+          </div>
+          <div class="timeline__step">
+            <div class="step__number">02</div>
+            <div>
+              <h3>AI training sprint</h3>
+              <p>Our pipeline clusters trade regimes, learns your risk appetite, and builds a live simulation of your alpha.</p>
+            </div>
+          </div>
+          <div class="timeline__step">
+            <div class="step__number">03</div>
+            <div>
+              <h3>Simulate &amp; refine</h3>
+              <p>Run paper trades against current order books, test scenarios, and tune guardrails before activating.</p>
+            </div>
+          </div>
+          <div class="timeline__step">
+            <div class="step__number">04</div>
+            <div>
+              <h3>Go autonomous</h3>
+              <p>Deploy to live markets with 24/7 monitoring, instant notifications, and one-click pause controls.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai-lab">
+      <div class="container ai-lab">
+        <div>
+          <h2 class="section__title">Inside the Copy Trader AI Lab</h2>
+          <ul class="list">
+            <li><strong>Signal extraction</strong> &mdash; We parse fills to recover indicators, timeframe bias, and execution tempo.</li>
+            <li><strong>Strategy distillation</strong> &mdash; Reinforcement learning policy distills your playbook into an on-chain bot.</li>
+            <li><strong>Risk overlays</strong> &mdash; Configure drawdown brakes, max position sizes, and volatility filters.</li>
+            <li><strong>Audit trails</strong> &mdash; Every automated trade links back to the learned rationale and historical analogue.</li>
+          </ul>
+          <button class="btn btn-secondary" data-open-modal="auth-modal">Join the beta</button>
+        </div>
+        <div class="ai-lab__panel">
+          <div class="code-block">
+            <pre><code class="language-json">{
+  "exchange": "hyperliquid",
+  "mode": "autonomous",
+  "latency_ms": 42,
+  "confidence": 0.91,
+  "guardrails": {
+    "max_drawdown": "5%",
+    "position_limit": "10x",
+    "circuit_breaker": true
+  }
+}</code></pre>
+          </div>
+          <p class="code-block__caption">Live telemetry from your AI trader stream.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <h2 class="section__title">FAQ</h2>
+        <div class="faq">
+          <article class="faq__item">
+            <h3>How do you access my Hyperliquid data?</h3>
+            <p>Copy Trader uses your read-only API keys to request fills, orders, and portfolio snapshots through Hyperliquid&apos;s official endpoints.</p>
+          </article>
+          <article class="faq__item">
+            <h3>Can I stop the automated trading at any time?</h3>
+            <p>Absolutely. Pause or revoke the agent instantly from the dashboard or your connected wallet.</p>
+          </article>
+          <article class="faq__item">
+            <h3>What markets are supported?</h3>
+            <p>We support the full Hyperliquid perpetuals catalogue, and new spot pairs as soon as they launch.</p>
+          </article>
+          <article class="faq__item">
+            <h3>Is there a fee for the AI agent?</h3>
+            <p>You pay a performance-aligned fee only when the autonomous strategy outperforms your historical baseline.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <div class="logo logo--footer">Copy<span>Trader</span></div>
+        <p class="footer__tagline">Learn your trade, become you.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Status</a>
+      </div>
+      <p class="footer__note">&copy; <span id="year"></span> Copy Trader Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="auth-modal" aria-hidden="true" role="dialog">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h2>Create your Copy Trader account</h2>
+      <p>Sign up to connect Hyperliquid, train your AI, and start autonomous trading.</p>
+      <form class="modal__form" id="auth-form">
+        <label>
+          Email address
+          <input type="email" name="email" placeholder="you@web3.xyz" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="Create a secure password" required />
+        </label>
+        <label class="modal__checkbox">
+          <input type="checkbox" name="terms" required />
+          I agree to the Terms of Service and Privacy Policy.
+        </label>
+        <button class="btn btn-primary" type="submit">Continue</button>
+      </form>
+      <p class="modal__footnote">Already have an account? <a href="#" id="switch-to-login">Sign in</a></p>
+    </div>
+  </div>
+
+  <div class="modal" id="demo-modal" aria-hidden="true" role="dialog">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h2>Simulated trade preview</h2>
+      <p>Enter a market and we&apos;ll fetch a mock strategy summary using your historical profile.</p>
+      <form class="modal__form" id="simulation-form">
+        <label>
+          Market symbol
+          <input type="text" name="symbol" placeholder="e.g. ETH-PERP" required />
+        </label>
+        <label>
+          Risk throttle
+          <input type="range" name="risk" min="1" max="5" value="3" />
+        </label>
+        <button class="btn btn-secondary" type="submit">Run simulation</button>
+      </form>
+      <div class="simulation-output" id="simulation-output" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
